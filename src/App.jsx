@@ -1,5 +1,6 @@
 import { useState } from "react"
- 
+import poke from './assets/pokeapi_256.png'
+
 function App(){
  
   const [nome, setNome] = useState('Ronaldo')
@@ -43,6 +44,8 @@ function App(){
   return (
     <div>
       <h3>Pizzaria 2E</h3>
+
+      <img src={poke} style={{width:330}} />
  
       <Formulario nome="Ricardo"
           idade={45}
